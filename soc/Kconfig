@@ -10,6 +10,10 @@ config QUALCOMM
 	bool
 	default n
 
+config MEDIATEK
+	bool
+	default n
+
  choice
 	prompt "SoC Support"
 
@@ -75,4 +79,10 @@ config QUALCOMM
 		select QUALCOMM
 		help
 		  Say Y if your device uses this Qualcomm SoC
+        config MEDIATEK_MT6765
+                bool "Support for QUALCOMM MSM8916"
+                default n
+                select MEDIATEK
+                help
+                  Say Y if your device uses this MediaTek SoC
  endchoice
