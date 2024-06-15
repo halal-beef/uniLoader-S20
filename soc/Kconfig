@@ -75,4 +75,12 @@ config QUALCOMM
 		select QUALCOMM
 		help
 		  Say Y if your device uses this Qualcomm SoC
+
+        config QC64_SM8150
+                bool "Support for QUALCOMM SM8150"
+                default n
+                select QUALCOMM
+                help
+                  Say Y if your device uses this Qualcomm SoC
+
  endchoice
