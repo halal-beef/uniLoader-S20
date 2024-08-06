@@ -6,6 +6,10 @@
 
 .section .text
 ENTRY _start
+	/* Preserve devices original FDT Address */
+	mov x10, 0x95000000
+	str x0, [x10]
+
 	/* Set up the base address for the stack */
 	adr x0, _stack_end
 
