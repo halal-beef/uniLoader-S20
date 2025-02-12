@@ -10,3 +10,4 @@ lib-$(CONFIG_SAMSUNG_J5LTE) += samsung/board-j5lte.o
 lib-$(CONFIG_SAMSUNG_J4LTE) += samsung/board-j4lte.o
 lib-$(CONFIG_SAMSUNG_GTA4XL) += samsung/board-gta4xl.o
 lib-$(CONFIG_SAMSUNG_R8S) += samsung/board-r8s.o
+lib-$(CONFIG_NOKIA_WASP) += nokia/board-wasp.o
