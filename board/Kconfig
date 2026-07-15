@@ -109,6 +109,13 @@ menu "Device Support"
 		  developers may want to leave this on to avoid holding down
 		  the power button every time.
 
+	config NOTHING_PACMAN
+		bool "Support for Nothing Phone 2A"
+		default n
+		depends on MT6886
+		help
+		  Say Y if you want to include support for Nothing Phone 2A
+
 	config QEMU_BOARD_VIRT
 		bool "Support for QEMU virt platform (aarch64)"
 		default n
